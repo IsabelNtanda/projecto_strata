@@ -7,6 +7,11 @@ color: #666;
 line-height: 1.7;
 }
 
+a{
+transition: .2s linear;
+text-decoration: none;
+border-bottom: 1px dotted ;
+}
 .main_header{
 position: fixed;
 top: 0;
@@ -15,6 +20,25 @@ height:100%;
 width: 35%;
 padding: 124px 54px 72px;
 background-image: url('..//images/overlay.png'),url('..//images/bg.jpg');
+background-position: left top;
+background-size:auto,cover;
+text-align: right;
+}
+.main_header-title{
+font-size: 22px;
+color:rgba(255, 255,255,.5);
+font-weight: normal;
+line-height: 1.5;
+}
+.main_header-title strong{
+color: white;
+font-weight: normal;
+}
+.main-header-link{
+color:inherit;
+}
+.main-header-link:hover{
+color: #49bf9d;
 }
 .main-content{
 width:65%;
