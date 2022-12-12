@@ -31,8 +31,10 @@
         <strong>Daniel Tapias Morales</strong>,<br />
         um zé ninguém qualquel<br />
         Retirado de
-        <a href="http://html5up.net" class="main-header-link">html5up.net</a>.
       </h1>
+      <p>
+        <a href="http://html5up.net" class="main-header-link">html5up.net</a>.
+      </p>
     </header>
 
     <main class="main-content">
@@ -47,7 +49,12 @@
           cubilia.
         </p>
 
-        <a href="#" title="Veja mais" class="button-default button-default-stroke button-default-big">Veja mais</a>
+        <a
+          href="#"
+          title="Veja mais"
+          class="button-default button-default-stroke button-default-big"
+          >Veja mais</a
+        >
       </section>
 
       <section class="main-content-section">
@@ -57,7 +64,7 @@
           <div class="col-2">
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/01.jpg">
-                <img src="assets/images/thumbs/01.jpg" title="descrição" />
+                <img src="assets/images/thumbs/01.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Magna sed consequat tempus</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -65,7 +72,7 @@
 
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/02.jpg">
-                <img src="assets/images/thumbs/02.jpg" title="descrição" />
+                <img src="assets/images/thumbs/02.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Ultricies lacinia interdum</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -73,7 +80,7 @@
 
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/03.jpg">
-                <img src="assets/images/thumbs/03.jpg" title="descrição" />
+                <img src="assets/images/thumbs/03.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Tortor metus commodo</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -82,7 +89,7 @@
           <div class="col-2">
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/04.jpg">
-                <img src="assets/images/thumbs/04.jpg" title="descrição" />
+                <img src="assets/images/thumbs/04.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Quam neque phasellus</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -90,7 +97,7 @@
 
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/05.jpg">
-                <img src="assets/images/thumbs/05.jpg" title="descrição" />
+                <img src="assets/images/thumbs/05.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -98,7 +105,7 @@
 
             <article class="recent-works-card">
               <a class="imagem-link" href="assets/images/fulls/06.jpg">
-                <img src="assets/images/thumbs/06.jpg" title="descrição" />
+                <img src="assets/images/thumbs/06.jpg" alt="descrição" />
               </a>
               <p class="recent-works-card-title">Risus ornare lacinia</p>
               <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -154,16 +161,16 @@
           <div class="col-1-3">
             <address>
               <p>
-                <span>Endereço</span>
+                <span>Endereço:</span>
                 1234 Somewhere Rd. Nashville, TN 00000 United States
               </p>
 
               <p>
-                <span>Telefone</span>
+                <span>Telefone:</span>
                 000-000-000
               </p>
               <p>
-                <span>E-mail</span>
+                <span>E-mail:</span>
                 email@server.com
               </p>
             </address>
@@ -193,7 +200,8 @@
         <h6>titulo h6</h6>
 
         <blockquote cite="http://developer.mozilla.org">
-          Esta é uma citação tirada da Mozilla Developer Center.
+          <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+       
         </blockquote>
 
         <p>
@@ -205,13 +213,13 @@
 
         <h4>Preformatado</h4>
 
-        <pre> 
-                    <code>
+        <pre><code>
+                   
     &lt;script&gt;
         alert('oi');
     &lt;/script&gt;
-                        </code>
-                </pre>
+        </code></pre>
+                
 
         <h4>Listas</h4>
 
@@ -242,8 +250,8 @@
 
             <h5>icons</h5>
             <ul class="ul-icons">
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fab fa-facebook-square"></i></li>
+              <li><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
+              <li><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></li>
             </ul>
           </div>
         </div>
@@ -428,54 +436,55 @@
         <input type="submit" class="button-default" value="mandar" />
 
         <h5>Forms</h5>
+        <form action="#">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" />
 
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+          <select>
+            <option value="0">Selecione ...</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">Javascript</option>
+          </select>
 
-        <select>
-          <option value="0">Selecione ...</option>
-          <option value="1">HTML</option>
-          <option value="2">CSS</option>
-          <option value="3">Javascript</option>
-        </select>
+          <label
+            ><input type="radio" value="baixa" name="prioridade" /> Baixa
+            Prioridade</label
+          >
+          <label
+            ><input type="radio" value="media" name="prioridade" /> Média
+            Prioridade</label
+          >
+          <label
+            ><input type="radio" value="alta" name="prioridade" /> Alta
+            Prioridade</label
+          >
 
-        <label
-          ><input type="radio" value="baixa" name="prioridade" /> Baixa
-          Prioridade</label
-        >
-        <label
-          ><input type="radio" value="media" name="prioridade" /> Média
-          Prioridade</label
-        >
-        <label
-          ><input type="radio" value="alta" name="prioridade" /> Alta
-          Prioridade</label
-        >
+          <label>
+            <input type="checkbox" name="copy" value="1" />Envie-me uma
+            cópia</label
+          >
+          <label>
+            <input type="checkbox" name="human" value="1" />Sou Humano</label
+          >
 
-        <label>
-          <input type="checkbox" name="copy" value="1" />Envie-me uma
-          cópia</label
-        >
-        <label>
-          <input type="checkbox" name="human" value="1" />Sou Humano</label
-        >
+          <label for="msg">Mensagem:</label>
+          <textarea placeholder="digite uma mensagem" id="msg"></textarea>
 
-        <label for="msg">Mensagem:</label>
-        <textarea placeholder="digite uma mensagem" id="msg"></textarea>
-
-        <input
-          type="submit"
-          class="button-default button-default-big"
-          value="Enviar"
-        />
-        <input
-          type="reset"
-          class="button-default button-default-stroke button-default-big"
-          value="Limpar"
-        />
+          <input
+            type="submit"
+            class="button-default button-default-big"
+            value="Enviar"
+          />
+          <input
+            type="reset"
+            class="button-default button-default-stroke button-default-big"
+            value="Limpar"
+          />
+        </form>
       </section>
 
       <section class="main-content-section">
@@ -487,19 +496,19 @@
 
         <div class="gallery-thumb row">
           <img class="col-1-3" src="assets/images/thumbs/01.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/02.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/03.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/04.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/05.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/06.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/03.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/01.jpg" alt="" />
-          <img class="col-1-3"  src="assets/images/thumbs/02.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/02.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/03.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/04.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/05.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/06.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/03.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/01.jpg" alt="" />
+          <img class="col-1-3" src="assets/images/thumbs/02.jpg" alt="" />
         </div>
 
         <h4>Left &amp; Right</h4>
 
-        <p>
+        <p class="paragraph-img">
           <img src="assets/images/avatar.jpg" alt="" class="img-left" />
           Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
           sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
@@ -516,12 +525,11 @@
           faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
           adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
         </p>
-        <p>
+        <p class="paragraph-img">
           <img
             src="assets/images/avatar.jpg"
             alt=""
-            class="img-right"
-          />Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            class="img-right" />Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
           sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
           faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
           adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
@@ -538,6 +546,23 @@
         </p>
       </section>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+      <ul class="ul-icons">
+        <li>
+          <a href="#" class="icon-link"
+            ><span class="hidden">Twitter</span><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="icon-link"
+            ><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>© Untitled</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
